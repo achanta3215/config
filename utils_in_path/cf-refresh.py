@@ -29,7 +29,7 @@ with open('../.history', 'r+') as historyFile:
   historyData = json.load(historyFile)
   if (not historyData['addedPathToBashProfile']):
     with open (str(Path(Path.home(), '.bash_profile').absolute()), 'a') as bashProfile:
-      bashProfile.write('export PATH="$PATH:$HOME/dev/config/utils_in_path')
+      bashProfile.write('export PATH="$PATH:$HOME/dev/config/utils_in_path"')
       historyData['addedPathToBashProfile'] = True
       historyFile.seek(0)
       json.dump(historyData, historyFile)
