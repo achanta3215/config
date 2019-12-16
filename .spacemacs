@@ -346,7 +346,7 @@ This function is called at the very end of Spacemacs initialization."
  '(c-basic-offset 2)
  '(evil-want-Y-yank-to-eol nil)
  '(js-indent-level 2)
- '(lsp-ui-doc-enable nil)
+ '(lsp-ui-doc-enable nil t)
  '(markdown-indent-on-enter nil)
  '(markdown-list-indent-width 2)
  '(org-log-done (quote time))
