@@ -1,0 +1,1 @@
+alias snap='find . -name ".*snap"'
