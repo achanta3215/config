@@ -1,3 +1,4 @@
 {
-    "addedPathToBashProfile": false
+    "addedPathToBashProfile": false,
+    "sourcedBashConfigFile": false
 }
