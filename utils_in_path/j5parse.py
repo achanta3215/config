@@ -2,6 +2,7 @@
 import sys
 import json5
 import json
+print()
 lines = sys.stdin.readlines()
 inputStr  = ''.join(str(s) for s in lines)
 
