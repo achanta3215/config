@@ -1,6 +1,7 @@
 set rtp+=/usr/local/opt/fzf
 syntax on
 set relativenumber
+set number
 
 call plug#begin('~/.vim/plugged')
 
