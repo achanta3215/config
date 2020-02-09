@@ -5,11 +5,15 @@ set number
 
 call plug#begin('~/.vim/plugged')
 
-
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'diepm/vim-rest-console'
 
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+noremap Zz <c-w>_ \| <c-w>\|
+noremap Zo <c-w>=
 
 call plug#end()
 
