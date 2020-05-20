@@ -53,7 +53,8 @@ values."
      ;; version-control
      javascript
      html
-       tern
+     tern
+     fzf
 (java :variables java-backend 'lsp)
 dap
      )
