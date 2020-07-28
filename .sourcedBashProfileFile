@@ -3,3 +3,4 @@ alias gl="git log --pretty='%Cred%h%Creset | %C(yellow)%d%Creset %s %Cgreen(%cr)
 alias t='tee >(pbcopy)'
 alias ncl='nc -kl 2999'
 alias ncpaste='pbpaste | nc localconnection 2999'
+alias gitc='git rev-list --count HEAD ^origin/develop'
