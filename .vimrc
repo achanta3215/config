@@ -10,6 +10,10 @@ let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'alvan/vim-closetag'
+let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.vue,*.phtml,*.js,*.jsx,*.coffee,*.erb'
+Plug 'jiangmiao/auto-pairs'
+
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'diepm/vim-rest-console'
 Plug 'andreshazard/vim-logreview'
