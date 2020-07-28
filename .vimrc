@@ -22,6 +22,7 @@ Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+nnoremap <C-p> :Files<Cr>
 
 
 nmap <silent> gd <Plug>(coc-definition)
