@@ -1,6 +1,5 @@
 set shell=/bin/bash
 set rtp+=/usr/local/opt/fzf
-syntax on
 set relativenumber
 set number
 let vim_markdown_preview_github=1
@@ -23,6 +22,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'alvan/vim-closetag'
 let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.vue,*.phtml,*.js,*.jsx,*.coffee,*.erb'
 Plug 'jiangmiao/auto-pairs'
+Plug 'rakr/vim-one'
 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'diepm/vim-rest-console'
@@ -54,6 +54,11 @@ noremap Zz <c-w>_ \| <c-w>\|
 noremap Zo <c-w>=
 
 call plug#end()
+let g:airline_theme='one'
+set background=dark
+colorscheme one
+set termguicolors
+
 
 command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
