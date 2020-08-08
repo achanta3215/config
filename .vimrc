@@ -8,6 +8,16 @@ let vim_markdown_preview_temp_file=1
 let vim_markdown_preview_browser='Google Chrome'
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'alvan/vim-closetag'
