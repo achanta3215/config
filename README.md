@@ -12,3 +12,6 @@ Run :PlugInstall to update plugins
 Initial Setup:
 `curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish`
 Symlink creation for fish config `ln -s ~/dev/config/config.fish ~/.config/fish/config.fish`
+
+**TMUX**
+Symlink creation for TMUX configuration: `ln -s ~/dev/config/.tmux.conf ~/.tmux.conf`
