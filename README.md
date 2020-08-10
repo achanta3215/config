@@ -15,3 +15,7 @@ Symlink creation for fish config `ln -s ~/dev/config/config.fish ~/.config/fish/
 
 **TMUX**
 Symlink creation for TMUX configuration: `ln -s ~/dev/config/.tmux.conf ~/.tmux.conf`
+
+**Brew**
+Prerequisite packages:
+`brew install reattach-to-user-namespace`
