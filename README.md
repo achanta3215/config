@@ -11,3 +11,4 @@ Run :PlugInstall to update plugins
 **Fish**
 Initial Setup:
 `curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish`
+Symlink creation for fish config `ln -s ~/dev/config/config.fish ~/.config/fish/config.fish`
