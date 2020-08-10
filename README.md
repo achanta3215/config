@@ -5,6 +5,9 @@ Automatized Common utility tools to be made available to terminal by simply runn
 
 Objective: To add more tools incrementally, and to get a common set-up across systems, by simply running a script.
 
-`VIM`
+**VIM**
 Run :PlugInstall to update plugins
 
+**Fish**
+Initial Setup:
+`curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish`
