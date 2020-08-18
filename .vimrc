@@ -62,6 +62,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" This is just an example. Keep this out of version control. Check for more examples below.
+let g:dbs = {'dev': 'postgres://postgres:@localhost:5432/hms'}
+
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 " Leader key is like a command prefix. 
 let mapleader='z'
@@ -88,7 +91,7 @@ vmap <BS> x
 set nospell
 
 " Plugins here
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " Plug 'Shougo/deoplete.nvim'
 Plug 'vim-airline/vim-airline'
@@ -101,6 +104,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mpyatishev/vim-sqlformat'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
 call plug#end()
 
 " deoplete config
@@ -176,4 +181,5 @@ command! -bang -nargs=* GGrep
 " map :q to byffer delete
 " http://stackoverflow.com/questions/7513380/vim-change-x-function-to-delete-buffer-instead-of-save-quit
 cnoreabbrev <expr> q getcmdtype() == ":" && (getcmdline() == 'q' && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) > 1) ? 'bd' : 'q'
+
 
