@@ -65,7 +65,7 @@ nmap <silent> gr <Plug>(coc-references)
 " This is just an example. Keep this out of version control. Check for more examples below.
 let g:dbs = {'dev': 'postgres://postgres:@localhost:5432/hms'}
 
-let g:coc_global_extensions = [ 'coc-tsserver' ]
+let g:coc_global_extensions = [ 'coc-tsserver', 'coc-rls' ]
 " Leader key is like a command prefix. 
 let mapleader='z'
 let maplocalleader='\'
